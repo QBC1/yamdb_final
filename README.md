@@ -1,7 +1,6 @@
 # Infra_sp2
 ____
 ![Workflow](https://github.com/QBC1/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
-____
 ### Сайт расположен на домене:
 #### http://10.128.0.18/
 
