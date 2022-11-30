@@ -53,8 +53,8 @@ jobs:
         uses: docker/build-push-action@v2
 
         with:
-          context: api_yamdb/
-          file: Dockerfile
+          context: ./path/to/context
+          file: ./path/to/context/Dockerfile
           push: true
           tags: qbci321/yamdb:latest
 
