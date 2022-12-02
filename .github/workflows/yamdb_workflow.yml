@@ -54,7 +54,7 @@ jobs:
 
         with:
           context: ./api_yamdb/
-            file: ./api_yamdb/Dockerfile
+          file: ./api_yamdb/Dockerfile
           push: true
           tags: qbci321/yamdb:latest
 
