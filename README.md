@@ -32,31 +32,31 @@ cd infra
 ```
 Поднимаем контейнеры (infra_db_1, infra_web_1, infra_nginx_1):
 ```
-docker-compose up -d --build
+sudo docker-compose up -d --build
 ```
 Выполняем миграции:
 ```
-docker-compose exec web python manage.py migrate
+sudo docker-compose exec web python manage.py migrate
 ```
 Создаем суперпользователя:
 ```
-docker-compose exec web python manage.py createsuperuser
+sudo docker-compose exec web python manage.py createsuperuser
 ```
 Србираем статику:
 ```
-docker-compose exec web python manage.py collectstatic --no-input
+sudo docker-compose exec web python manage.py collectstatic --no-input
 ```
 Создаем дамп базы данных:
 ```
-docker-compose exec web python manage.py dumpdata > fixtures.json
+sudo docker-compose exec web python manage.py dumpdata > fixtures.json
 ```
 Команда для импорта (восстановления) с loaddata:
 ```
-docker-compose exec web python manage.py loaddata fixtures.json
+sudo docker-compose exec web python manage.py loaddata fixtures.json
 ```
 Останавливаем контейнеры:
 ```
-docker-compose down -v
+sudo docker-compose down -v
 ```
 Шаблон наполнения .env расположенный по пути infra/.env:
 ```
