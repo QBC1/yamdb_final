@@ -16,4 +16,3 @@ requests==2.26.0
 sorl-thumbnail==12.7.0
 sqlparse==0.3.1
 python-dotenv
-psycopg2

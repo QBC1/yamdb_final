@@ -8,8 +8,6 @@ class AdminPermissions(permissions.BasePermission):
         if hasattr(request.user, 'role'):
             if request.user.is_admin or request.user.is_staff:
                 return True
-            else:
-                raise exceptions.PermissionDenied()
         raise exceptions.NotAuthenticated()
 
 
