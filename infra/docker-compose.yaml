@@ -6,7 +6,6 @@ volumes:
   database:
 
 services:
-
   db:
     image: postgres:13.0-alpine
     volumes:
