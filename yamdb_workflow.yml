@@ -74,6 +74,7 @@ jobs:
         username: ${{ secrets.USER }}
         key: ${{ secrets.SSH_KEY }}
         passphrase: ${{ secrets.PASSPHRASE }}
+
         script: |
           sudo docker pull qbci321/yamdb
           sudo docker stop $(sudo docker ps -a -q)
