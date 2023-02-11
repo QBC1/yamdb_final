@@ -42,7 +42,7 @@ sudo docker-compose exec web python manage.py migrate
 ```
 sudo docker-compose exec web python manage.py createsuperuser
 ```
-Србираем статику:
+Собираем статику:
 ```
 sudo docker-compose exec web python manage.py collectstatic --no-input
 ```
