@@ -74,7 +74,7 @@ jobs:
         passphrase: ${{ secrets.PASSPHRASE }}
         script: |
           sudo docker pull ${{ secrets.DOCKER_USERNAME }}/yamdb:latest
-          pwd
+          cd yamdb_final/infra/
           ls
           sudo docker-compose up -d --build
           sudo docker-compose exec web python manage.py migrate
