@@ -75,8 +75,8 @@ jobs:
         script: |
           sudo docker pull ${{ secrets.DOCKER_USERNAME }}/yamdb:latest
           cd yamdb_final/infra/
-          sudo docker-compose stop yamdb_web
-          sudo docker-compose rm yamdb_web -f
+          sudo docker-compose stop infra_web_1
+          sudo docker-compose rm infra_web_1 -f
           sudo docker image rm ${{ secrets.DOCKER_USERNAME }}/yamdb_final_web
           rm .env
           touch .env
