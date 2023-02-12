@@ -8,7 +8,7 @@ services:
     env_file:
       - ./.env
   web:
-    build: qbci321/yamdb:latest
+    image: qbci321/yamdb:latest
     restart: always
     volumes:
       - static_value:/app/static/
