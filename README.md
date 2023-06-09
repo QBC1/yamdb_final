@@ -1,6 +1,8 @@
 # Infra_sp2
-____
 ![Workflow](https://github.com/QBC1/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+
+![Python](https://img.shields.io/badge/dynamic/xml?color=red&label=Python&query=3.9&url=https%3A%2F%2Fpython.org%2F) ![Django](https://img.shields.io/pypi/v/django?color=orange&label=Django) ![Django REST framework](https://img.shields.io/pypi/v/djangorestframework?color=yellow&label=Django%20REST%20framework) ![Gunicorn](https://img.shields.io/pypi/v/gunicorn?color=toxic&label=Gunicorn) ![Sorl-thumbnail](https://img.shields.io/pypi/v/sorl-thumbnail?color=blue&label=Sorl-thumbnail) ![Djoser](https://img.shields.io/pypi/v/djoser?color=darkblue&label=Djoser) ![Python-dotenv](https://img.shields.io/pypi/v/python-dotenv?color=purple&label=Python-dotenv)
+____
 ### Сайт расположен на домене:
 #### http://qbci.ddns.net/
 
